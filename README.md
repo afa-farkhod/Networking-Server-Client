@@ -1,8 +1,6 @@
 # Networking-Server-Client
 Networking Server-Client Java API
 
-![image](https://user-images.githubusercontent.com/24220136/234189387-7b1e07de-13f0-4953-a678-fa3671ddda01.png)
-
 
 ![Capture](https://user-images.githubusercontent.com/24220136/234189747-402b0ed9-cfb7-471c-8bb7-97bd56b98769.PNG)
 
