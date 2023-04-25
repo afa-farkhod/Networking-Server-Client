@@ -9,7 +9,7 @@ The client sends the radius through a `DataOutputStream` on the output stream so
 
 ![image](https://user-images.githubusercontent.com/24220136/234190505-8115fb1c-2ea0-4413-9eaf-fd71a109bbdf.png)
 
-You start the server program first and then start the client program. In the client program, enter a radius in the text field and press Enter to send the radius to the server. The server computes the area and sends it back to the client. This process is repeated until one of the two programs terminates.
+You start the server program first and then start the client program. In the client program, enter a radius in the text field and press Enter to send the radius to the server. The server computes the area and sends it back to the client. This process is repeated until one of the two programs terminates. Local port on the client is also visible in the first line.
 
 ![Capture](https://user-images.githubusercontent.com/24220136/234189747-402b0ed9-cfb7-471c-8bb7-97bd56b98769.PNG)
 
