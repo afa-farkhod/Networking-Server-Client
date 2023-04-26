@@ -30,5 +30,11 @@ The Client class uses the following statement to create a socket that will reque
 
 `Socket socket = new Socket("localhost", 8000)`
 
-If you receive a `java.net.BindException` when you start the server, the server port is currently in use. You need to terminate the process that is using the server port and then restart the server.
+If you receive a `java.net.BindException` when you start the server, the server port is currently in use. You need to terminate the process that is using the server port and then restart the server. First check for the `port` whether it's in use or not by following command in the terminal:
+
+`newstat -ano | findstr :8080`
+
+After that, you can terminate that particular port with the following command (in the below example 7352 is PID (Process ID):
+
+`taskkill /PID 7352 /F`
 
