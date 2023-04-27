@@ -38,3 +38,15 @@ After that, you can terminate that particular port with the following command (i
 
 `taskkill /PID 7352 /F`
 
+## Networking Server-Multiple-Client Java API
+-----------
+
+A server can serve multiple clients. The connection to each client is handled by one thread. Multiple clients are quite often connected to a single server at the same time. Typically, a server runs continuously on a server computer, and clients from all over the Internet can connect to it. You can use threads to handle the server’s multiple clients simultaneously—simply create a thread for each connection. Here is how the server handles the establishment of a connection:
+
+![image](https://user-images.githubusercontent.com/24220136/234768575-e24f3f1d-ce81-40a9-abb8-1550f8eee127.png)
+
+The server socket can have many connections. Each iteration of the while loop creates a new connection. Whenever a connection is established, a new thread is created to handle communication between the server and the new client, and this allows multiple connections to run at the same time. Below demo creates a server class that serves multiple clients simultaneously. For each connection, the server starts a new thread. This thread continuously receives input (the radius of a circle) from clients and sends the results (the area of the circle) back to them. The client program is the same as in previous example. A sample run of the server with two clients is shown in below Figure. Following is the demo of Multi Thread Server and Multiple Clients connection Java API, source is located in the `Server-Multiple-Client` folder
+
+![image](https://user-images.githubusercontent.com/24220136/234768523-eab7abc5-0bf9-4f64-b6d4-5a7065b86bc0.png)
+
+
