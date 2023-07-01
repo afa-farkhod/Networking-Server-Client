@@ -7,10 +7,11 @@
   <img src="https://user-images.githubusercontent.com/24220136/234190297-f013cc38-04e6-4655-bf56-ced22dbfe647.png" alt="Image">
 </p>
 
-
 - The client sends the radius through a `DataOutputStream` on the output stream socket, and the server receives the radius through the `DataInputStream` on the input stream socket, as shown in below Figure. The server computes the area and sends it to the client through a `DataOutputStream` on the output stream socket, and the client receives the area through a `DataInputStream` on the input stream socket.
 
-![image](https://user-images.githubusercontent.com/24220136/234190505-8115fb1c-2ea0-4413-9eaf-fd71a109bbdf.png)
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/24220136/234190505-8115fb1c-2ea0-4413-9eaf-fd71a109bbdf.png" alt="Image">
+</p>
 
 - You start the server program first and then start the client program. In the client program, enter a radius in the text field and press Enter to send the radius to the server. The server computes the area and sends it back to the client. This process is repeated until one of the two programs terminates. Local port on the client is also visible in the first line. Following demo source code is located in the `Server-Single-Client` folder.
 
