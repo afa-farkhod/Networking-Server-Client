@@ -4,7 +4,7 @@
 - This repository presents a `client` program and a `server` program. The client sends data to a server. The server receives the data, uses it to produce a result, and then sends the result back to the client. The client displays the result on the console. In this example, the data sent from the client comprise the radius of a circle, and the result produced by the server is the area of the circle.
   
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/24220136/234190297-f013cc38-04e6-4655-bf56-ced22dbfe647.png" alt="Image" width="400" height="50">
+  <img src="https://user-images.githubusercontent.com/24220136/234190297-f013cc38-04e6-4655-bf56-ced22dbfe647.png" alt="Image" width="400" height="100">
 </p>
 
 
