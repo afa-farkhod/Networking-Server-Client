@@ -2,8 +2,10 @@
 ## Networking Server-Client Java API
 -----------
 - This repository presents a `client` program and a `server` program. The client sends data to a server. The server receives the data, uses it to produce a result, and then sends the result back to the client. The client displays the result on the console. In this example, the data sent from the client comprise the radius of a circle, and the result produced by the server is the area of the circle.
-
-![image](https://user-images.githubusercontent.com/24220136/234190297-f013cc38-04e6-4655-bf56-ced22dbfe647.png)
+  
+<p align="center">
+  <img src="![image](https://user-images.githubusercontent.com/24220136/234190297-f013cc38-04e6-4655-bf56-ced22dbfe647.png)" alt="Image" width="400" height="300">
+</p>
 
 - The client sends the radius through a `DataOutputStream` on the output stream socket, and the server receives the radius through the `DataInputStream` on the input stream socket, as shown in below Figure. The server computes the area and sends it to the client through a `DataOutputStream` on the output stream socket, and the client receives the area through a `DataInputStream` on the input stream socket.
 
