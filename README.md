@@ -18,9 +18,9 @@
 ![Capture](https://user-images.githubusercontent.com/24220136/234189747-402b0ed9-cfb7-471c-8bb7-97bd56b98769.PNG)
 
 - The networking classes are in the package java.net. You should import this package when writing Java network programs. The Server class creates a ServerSocket serverSocket and attaches it to port 8000 using this statement (line 26 in `Server.java`):
-
-`ServerSocket serverSocket = new ServerSocket(8000)`
-
+```
+ServerSocket serverSocket = new ServerSocket(8000)
+```
 - The server then starts to listen for connection requests, we can check from the `terminal`
 
 <p align="center">
@@ -33,17 +33,17 @@ place it in a separate thread (lines 23–59). The statements for updating GUI n
 the JavaFX application thread using the Platform.runLater method (lines 27–28, 49–53).
 
 - The Client class uses the following statement to create a socket that will request a connection to the server on the same machine (localhost) at port 8000 (line 67 in `Client.java`):
-
-`Socket socket = new Socket("localhost", 8000)`
-
+```
+Socket socket = new Socket("localhost", 8000)
+```
 - If you receive a `java.net.BindException` when you start the server, the server port is currently in use. You need to terminate the process that is using the server port and then restart the server. First check for the `port` whether it's in use or not by following command in the terminal:
-
-`newstat -ano | findstr :8080`
-
+```
+newstat -ano | findstr :8080
+```
 - After that, you can terminate that particular port with the following command (in the below example 7352 is PID (Process ID):
-
-`taskkill /PID 7352 /F`
-
+```
+taskkill /PID 7352 /F
+```
 ## Networking Server-Multiple-Client Java API
 -----------
 
