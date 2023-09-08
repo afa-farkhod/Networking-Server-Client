@@ -44,7 +44,6 @@ newstat -ano | findstr :8080
 taskkill /PID 7352 /F
 ```
 ## Networking Server-Multiple-Client Java API
------------
 
 - A server can serve multiple clients. The connection to each client is handled by one thread. Multiple clients are quite often connected to a single server at the same time. Typically, a server runs continuously on a server computer, and clients from all over the Internet can connect to it. You can use threads to handle the server’s multiple clients simultaneously—simply create a thread for each connection. Here is how the server handles the establishment of a connection:
 
