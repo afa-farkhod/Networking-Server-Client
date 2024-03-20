@@ -26,7 +26,7 @@ ServerSocket serverSocket = new ServerSocket(8000)
   <img src="https://user-images.githubusercontent.com/24220136/234188058-dac6fc14-328b-4d62-9db2-79d90063d92c.png" alt="Image">
 </p>
 
-- The server waits until the client requests a connection. After it is connected, the server reads the radius from the client through an input stream, computes the area, and sends the result to the client through an output stream. The ServerSocket accept() method takes time
+- The server waits until the client requests a connection. After it is connected, the server reads the radius from the client through an input stream, computes the area and sends the result to the client through an output stream. The ServerSocket accept() method takes time
 to execute. It is not appropriate to run this method in the JavaFX application thread. So, we
 place it in a separate thread (lines 23–59). The statements for updating GUI need to run from
 the JavaFX application thread using the Platform.runLater method (lines 27–28, 49–53).
